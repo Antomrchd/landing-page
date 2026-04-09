@@ -398,3 +398,95 @@ body {
   .experience-grid { grid-template-columns: 1fr; gap: 36px; }
   .container { padding: 0 20px; }
 }
+
+/* =====================
+   EXPERIENCE — UPDATED
+===================== */
+.experience-intro {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+
+.experience-intro-left {
+  flex: 0 0 380px;
+}
+
+.experience-intro-left h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.1;
+  margin-top: 16px;
+}
+
+.experience-intro-left h2 em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.experience-intro-right {
+  flex: 1;
+  padding-top: 48px;
+}
+
+.experience-lead {
+  font-size: 16px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.9;
+}
+
+.experience-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.exp-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.1);
+  transition: background 0.3s;
+}
+
+.exp-step:last-child {
+  border-bottom: none;
+}
+
+.step-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--gold);
+  letter-spacing: 3px;
+  flex: 0 0 60px;
+  padding-top: 4px;
+}
+
+.step-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.step-content p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.9;
+  max-width: 640px;
+}
+
+@media (max-width: 768px) {
+  .experience-intro { flex-direction: column; gap: 24px; }
+  .experience-intro-left { flex: none; }
+  .experience-intro-left h2 { font-size: 36px; }
+  .exp-step { flex-direction: column; gap: 16px; }
+}
