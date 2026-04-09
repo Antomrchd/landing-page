@@ -490,3 +490,26 @@ body {
   .experience-intro-left h2 { font-size: 36px; }
   .exp-step { flex-direction: column; gap: 16px; }
 }
+
+/* Destination card link */
+a.dest-card {
+  text-decoration: none;
+  display: block;
+}
+
+.dest-discover {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold, #c9a84c);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.dest-card:hover .dest-discover {
+  opacity: 1;
+}
